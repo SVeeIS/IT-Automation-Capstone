@@ -3,10 +3,10 @@
 import os 
 import requests
 
-dir_data_desc = 'supplier-data/descriptions/'
+dir_data_desc = os.path.expanduser('~') + '/supplier-data/descriptions/'
 list_data_desc = os.listdir(dir_data_desc)
 
-dir_image_files = 'supplier-data/images/'
+dir_image_files = os.path.expanduser('~') + '/supplier-data/images/'
 list_image_files = os.listdir(dir_image_files)
 
 image_list = [image_name for image_name in list_image_files if '.jpeg' in image_name]

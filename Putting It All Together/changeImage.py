@@ -3,7 +3,7 @@
 import os
 from PIL import Image
 
-path = 'supplier-data/images/'
+path = os.path.expanduser('~') + '/supplier-data/images/'
 		
 for image in os.listdir(path):
 	if '.tiff' in image and '.' not in image[0]:

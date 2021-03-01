@@ -5,7 +5,7 @@ import emails
 import os 
 from datetime import date
  
-dir = 'supplier-data/descriptions/'
+dir = os.path.expanduser('~') + '/supplier-data/descriptions/'
 report = []
  
 def process_data(data):
